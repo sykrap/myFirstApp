@@ -1,0 +1,100 @@
+<nav>
+  <div class="nav-wrapper">
+    <img class="brand-logo" width="60" alt="Hackathon video logo" src="../assets/logo.png">
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li>
+        <a>{{title}}</a>
+      </li>
+    </ul>
+    <ul>
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Menu</a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li>
+          <a href="#!">Hackathon Idea</a>
+        </li>
+        <li>
+          <a href="#!">Initial Design</a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="#!">Developed UI</a>
+        </li>
+        <li>
+          <a href="#!">What I have learnt today</a>
+        </li>
+
+      </ul>
+    </ul>
+  </div>
+</nav>
+<!-- Facebook -->
+<a href="https://www.facebook.com/seoyoung.park.96780" target="_blank">
+  <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+</a>
+
+<div class="container">
+  <div class="row">
+    <div class="col s6">
+      <img width="300" alt="team Photo" class="team-photo" src="../assets/teamPhoto.jpg">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12">
+      <button (click)="hackathonIdea()">Hackathon Idea</button>
+      {{numberOfClicks}}
+      <button (click)="initialDesign()">Initial Design</button>
+      <button (click)="developedUI()">Developed UI</button>
+      <button (click)="whatILearntToday()">What I Learnt Today</button>
+    </div>
+  </div>
+
+  <div *ngIf="showHackathonIdea">
+    <h2>Hackathon Idea </h2>
+    <p class="flow-text">Our idea to create an online video platform that will:</p>
+    <ol>
+      <li>
+        view videos
+      </li>
+      <li>
+        upload videos
+      </li>
+      <li>
+        search/ filter by tags
+      </li>
+      <li>
+        access control
+      </li>
+    </ol>
+  </div>
+
+  <div *ngIf="showInitialDesign">
+    <h2>Initial Design</h2>
+    <img class="materialboxed" width="300" alt="UI" src="../assets/UI.jpg">
+    <img class="materialboxed" width="300" alt="UI" src="../assets/UI2.jpg">
+  </div>
+
+  <div *ngIf="showDevelopedUI">
+    <h2> Developed UI</h2>
+        <img class="materialboxed" width="400" alt="Angular Logo" src="../assets/design.jpg">
+  </div>
+
+  <div *ngIf="showWhatILearntToday">
+    <h2>What I learnt today</h2>
+    <ol>
+      <li>
+        Download node at
+        <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a>
+      </li>
+      <li>
+        Go to Angular Cli at
+        <a href="https://cli.angular.io/" target="_blank">https://cli.angular.io/</a> then initiate the angular on git bash or command line
+      </li>
+      <li>Then open the local host and start editing html and css components
+      </li>
+      Continuing the journey of coding
+    </ol>
+  </div>
+</div>

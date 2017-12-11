@@ -1,0 +1,19 @@
+img.team-photo {
+    display: block;
+    margin: 1em auto;
+}
+* {
+    color: black;
+    font-family: Trebuchet
+}
+h2 {
+    font-size: 18px;
+}
+
+#share-buttons img {
+width:35px;
+padding: 5px;
+border: 0;
+box-shadow: 0;
+display: inline;
+}
