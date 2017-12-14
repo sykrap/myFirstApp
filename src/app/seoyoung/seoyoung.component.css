@@ -17,3 +17,11 @@ border: 0;
 box-shadow: 0;
 display: inline;
 }
+ul{
+    /* margin-left: 100px; */
+}
+li{ 
+    color: blue;
+    
+    list-style: circle!important;
+    }
